@@ -1,11 +1,9 @@
-package model;
-
-import model.Student;
+package tuesday.interfaces;
 
 import java.util.Arrays;
 
 public class StudentDB {
-        private Student [] allMyStudents;
+        private Student[] allMyStudents;
 
     public StudentDB(Student[] allMyStudents) {
         this.allMyStudents = allMyStudents;

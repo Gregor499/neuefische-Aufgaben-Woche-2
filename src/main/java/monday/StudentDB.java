@@ -1,6 +1,4 @@
-package tuesday;
-
-import tuesday.Student;
+package monday;
 
 import java.util.Arrays;
 

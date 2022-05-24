@@ -1,5 +1,7 @@
-package model;
+package tuesday.tuesday.heritage;
 
+import monday.Student;
+import monday.StudentDB;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

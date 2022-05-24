@@ -1,6 +1,4 @@
-package model;
-
-import model.Student;
+package monday;
 
 public class Main {
     public static void main(String[] args) {

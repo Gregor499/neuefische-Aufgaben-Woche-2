@@ -1,6 +1,4 @@
-package tuesday;
-
-import java.util.UUID;
+package tuesday.interfaces;
 
 public interface Student {
     String getName();

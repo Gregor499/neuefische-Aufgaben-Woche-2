@@ -1,8 +1,8 @@
-package tuesday;
+package tuesday.heritage;
 
 import java.util.UUID;
 
-public class Geschichtsstudent implements Student {
+public class Geschichtsstudent extends Student {
     private String name;
     private String id;
 
