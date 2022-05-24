@@ -14,6 +14,7 @@ public class StudentDBTest {
         String stu2id = student2.getId();
         ArrayList<tuesday.arrayList.Student> myTestStudents = new ArrayList<>();
         myTestStudents.add(student1);
+        myTestStudents.add(student2);
         tuesday.arrayList.StudentDB testDb = new StudentDB(myTestStudents);
         //WHEN
         ArrayList<tuesday.arrayList.Student> actual = testDb.list();
