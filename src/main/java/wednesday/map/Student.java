@@ -1,4 +1,4 @@
-package monday;
+package wednesday.map;
 
 import java.util.UUID;
 
@@ -28,11 +28,12 @@ public Student(String name){
         this.id = id;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                '}';
+    public String toString(String name, String id) {
+        Student student1 = new Student(name);
+
+        return (student1.getName() + ", " +
+                student1.getId());
     }
+
+
 }

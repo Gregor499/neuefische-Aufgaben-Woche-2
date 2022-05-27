@@ -7,7 +7,7 @@ public class Informatikstudent extends Student {
     private String id;
 
     public Informatikstudent(String name) {
-        this.name = name;
+        super(name);
         id = UUID.randomUUID().toString();
     }
 

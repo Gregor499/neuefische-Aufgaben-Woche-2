@@ -1,13 +1,13 @@
 package tuesday.arrayList;
 
-import monday.Student;
+import tuesday.arrayList.Student;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class StudentTest {
-    monday.Student student1 = new Student("");
+    tuesday.arrayList.Student student1 = new Student("");
 
     @Test
     void givesBackName() {

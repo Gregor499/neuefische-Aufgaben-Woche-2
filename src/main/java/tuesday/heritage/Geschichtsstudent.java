@@ -7,7 +7,7 @@ public class Geschichtsstudent extends Student {
     private String id;
 
     public Geschichtsstudent(String name) {
-        this.name = name;
+        super(name);
         id = UUID.randomUUID().toString();
     }
 

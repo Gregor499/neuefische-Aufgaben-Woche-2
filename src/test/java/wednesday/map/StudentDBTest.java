@@ -1,8 +1,11 @@
-package monday;
+package wednesday.map;
 
 import org.junit.jupiter.api.Test;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class StudentDBTest {
@@ -12,17 +15,14 @@ public class StudentDBTest {
         //GIVEN
         Student student1 = new Student("Gustav");
         Student student2 = new Student("Peter");
-        Student[] myTestStudents = {student1, student2};
+        ArrayList<Student> myTestStudents = new ArrayList<>();
+        myTestStudents.add(student1);
+        myTestStudents.add(student2);
         StudentDB testDb = new StudentDB(myTestStudents);
-        String expected = "Unsere Schüler:\n[Student{name='" + student1.getName() + "', " +
-                "id='" + student1.getId() +
-                "'}, Student{name='"+ student2.getName() + "', " +
-                "id='" + student2.getId() + "'}]";
-
         //WHEN
-        String actual = testDb.toString();
+        Collection<Student> actual = testDb.list();
         //THEN
-        assertEquals(expected, actual);
+        assertEquals(myTestStudents, actual);
     }
 
 /*    @Test

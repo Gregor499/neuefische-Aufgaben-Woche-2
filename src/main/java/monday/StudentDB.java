@@ -3,27 +3,31 @@ package monday;
 import java.util.Arrays;
 
 public class StudentDB {
-        private Student [] allMyStudents;
+    private Student[] allMyStudents;
 
     public StudentDB(Student[] allMyStudents) {
         this.allMyStudents = allMyStudents;
     }
 
-    public Student[] list(){
+    public Student[] list() {
         return allMyStudents;
     }
 
-    public Student[] getStudenten() {
-        return allMyStudents;
+    @Override
+    public String toString() {
+        return "Unsere Schüler:\n" + Arrays.toString(allMyStudents);
     }
 
-    public String toString(){
-        return "Unsere Schüler: " + Arrays.toString(allMyStudents);
+    public Student randomStudent() {
+        int randomIndex = ((int) (Math.random() * allMyStudents.length));
+        return allMyStudents[randomIndex];
     }
 
-/*    public Student randomStudent(){
-        Math.random();
-        return;
-    }*/
-    }
+    public void addStudent(String newStudentName) {
+                Student[] studendArr = Student[(allMyStudents.length+1)];
+        studendArr = allMyStudents;
+        Student student = new Student("" + newStudentName);
 
+        allMyStudents[allMyStudents.length+1] = student;
+            }
+}

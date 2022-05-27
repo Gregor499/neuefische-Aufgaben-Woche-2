@@ -20,10 +20,10 @@ public class StudentTest {
         assertEquals("30", student1.getId());
     }
 
-    @Test
+/*    @Test
     void propertyOutput() {
         student1.setName("Gustav");
         student1.setId("30");
         assertEquals("Gustav, 30", student1.toString(student1.getName(), student1.getId()));
-    }
+    }*/
 }
