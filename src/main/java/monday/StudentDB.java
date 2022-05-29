@@ -1,6 +1,7 @@
 package monday;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class StudentDB {
     private Student[] allMyStudents;
@@ -23,11 +24,38 @@ public class StudentDB {
         return allMyStudents[randomIndex];
     }
 
-    public void addStudent(String newStudentName) {
-                Student[] studendArr = Student[(allMyStudents.length+1)];
-        studendArr = allMyStudents;
-        Student student = new Student("" + newStudentName);
+    public void addStudent(Student newStudentName) {
+        Student[] studArr = new Student[(allMyStudents.length+1)];
+        for (int i = 0; i < allMyStudents.length; i++) {
+            studArr[i] = allMyStudents[i];
+        }
 
-        allMyStudents[allMyStudents.length+1] = student;
+        studArr[allMyStudents.length] = newStudentName;
+        allMyStudents = studArr;
             }
+
+    public void removeStudent(String removeId) {
+        if(!containsId(removeId)){
+         System.out.println("Id nicht vorhanden!");
+          return;
+        }
+        Student[] studArr = new Student[(allMyStudents.length-1)];
+        int counter = 0;
+        for (int i = 0; i < studArr.length; i++) {
+            if (allMyStudents[i].getId().equals(removeId)){
+                counter++;
+            }
+            studArr[i] = allMyStudents[i+counter];
+        }
+        allMyStudents = studArr;
+    }
+
+    public boolean containsId(String id) {
+        for (Student s : allMyStudents) {
+            if (s.getId().equals(id)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

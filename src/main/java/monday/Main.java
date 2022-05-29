@@ -8,7 +8,10 @@ public class Main {
 
         Student[] myTestStudents = {student1, student2};
         StudentDB testDb = new StudentDB(myTestStudents);
+        Student student3 = new Student("lal");
 
-        System.out.println(testDb.toString());
+        testDb.addStudent(student3);
+
+        System.out.println(testDb.list());
     }
 }
