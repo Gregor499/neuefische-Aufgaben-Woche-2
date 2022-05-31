@@ -108,18 +108,4 @@ public class StudentDBTest {
         assertEquals(expected, actual.length);
         System.out.println(testDb.toString());
     }
-
-/*    @Test
-    void givesBackId() {
-        student1.setAlter(30);
-        assertEquals(30, student1.getAlter());
-    }
-
-    @Test
-    void ListOutput() {
-        student1.setName("Gustav");
-        student1.setId("30");
-
-        assertEquals("Gustav, 30", student1.toString(student1.getName(), student1.getId()));
-    }*/
 }

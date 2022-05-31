@@ -1,12 +1,20 @@
 package tuesday.interfaces;
 
+import monday.Student;
+import monday.StudentDB;
+
 public class Main {
     public static void main(String[] args) {
-        Student student1 = new Informatikstudent("Gustav");
-        Student student2 = new Geschichtsstudent("Larry");
-        Student[] studentArray = {student1, student2};
-        StudentDB studentList = new StudentDB(studentArray);
+        monday.Student student1 = new monday.Student("Gustav");
+        monday.Student student2 = new monday.Student("Peter");
 
-        System.out.println(studentList.toString());
+
+        monday.Student[] myTestStudents = {student1, student2};
+        monday.StudentDB testDb = new StudentDB(myTestStudents);
+        monday.Student student3 = new Student("lal");
+
+        testDb.addStudent(student3);
+
+        System.out.println(testDb.list());
     }
 }
