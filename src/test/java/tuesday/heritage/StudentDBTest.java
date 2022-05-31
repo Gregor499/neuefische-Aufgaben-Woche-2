@@ -1,4 +1,4 @@
-package tuesday.tuesday.heritage;
+package tuesday.heritage;
 
 import monday.Student;
 import monday.StudentDB;

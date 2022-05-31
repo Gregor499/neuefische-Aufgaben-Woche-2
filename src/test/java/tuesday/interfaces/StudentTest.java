@@ -1,13 +1,14 @@
-package tuesday.tuesday.heritage;
+package tuesday.interfaces;
 
-import monday.Student;
+import tuesday.interfaces.Informatikstudent;
+import tuesday.interfaces.Student;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class StudentTest {
-    Student student1 = new Student("");
+    tuesday.interfaces.Student student1 = new Informatikstudent("");
 
     @Test
     void givesBackName() {

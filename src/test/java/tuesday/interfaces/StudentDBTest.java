@@ -1,4 +1,4 @@
-package tuesday.interfaces.tuesday;
+package tuesday.interfaces;
 
 import monday.Student;
 import monday.StudentDB;
